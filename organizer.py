@@ -4,10 +4,13 @@
 import os
 import shutil
 
-#the extensions to be moved
+# the extensions to be moved
 extensions = ['.py', '.sh']
 
-for file in os.listdir('.'):
+# the path to the directory to be organized
+pathtodir = '.'
+
+for file in os.listdir(pathtodir):
 
     for extension in extensions:
 
